@@ -10,15 +10,15 @@
 #property description "The condition is that if the Equity is equal to or greater than the account balance"
 #property description "a buy trade is excecuted."
 
-#include<Trade\Trade.mqh>
+#include<Trade/Trade.mqh>
 CTrade Trade;
 
 
 void OnTick() //this is the trade function
 {
-    double Ask=NormalizeDouble(SymbolInfoDouble(_Symbol,SYMBOL_ASK),_Digits);//Get the Ask price of the pair     
-    double Balance=AccountInfoDouble(ACCOUNT_BALANCE);//get the account balance     
-    double Equity=AccountInfoDouble(ACCOUNT_EQUITY); //get the account equity
+    double Ask      = NormalizeDouble(SymbolInfoDouble(_Symbol,SYMBOL_ASK),_Digits);//Get the Ask price of the pair     
+    double Balance  = AccountInfoDouble(ACCOUNT_BALANCE);//get the account balance     
+    double Equity   = AccountInfoDouble(ACCOUNT_EQUITY); //get the account equity
 
     if(Equity >= Balance) //Condition//if the account equity is greater than or equal to the account balance
 

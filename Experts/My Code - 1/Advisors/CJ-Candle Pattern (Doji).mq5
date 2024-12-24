@@ -15,7 +15,7 @@
 //+------------------------------------------------------------------+
 //|   Includes                                                       |
 //+------------------------------------------------------------------+
-#include  <Trade\Trade.mqh>   //This preprocessor replaces the line #include <file_name> with the content of the file WinUser32.mqh.
+#include  <Trade/Trade.mqh>   //This preprocessor replaces the line #include <file_name> with the content of the file WinUser32.mqh.
                               //The Trade preprocessor will help us open trade positions
                            
 //+------------------------------------------------------------------+
